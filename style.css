@@ -3,10 +3,23 @@ body{
     font-size: 16px;
 }
 
-a{
+
+a:visited {
     text-decoration: none;
-    color: black;
+    color: #555;
+    border-bottom-color: #ccc;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+
+a{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
 
 
 header  {
@@ -23,6 +36,9 @@ h1{
     font-style: italic;
 }
 
+h1 a:visited {
+    color: #000;
+}
 
 h2 {
     margin-left: 10px;
@@ -51,4 +67,22 @@ nav ul li{
     display: inline-block;
     width: 300px;
     margin-right: 5px;
+}
+
+#text{
+    width: 400px;
+}
+
+p{
+    margin-left:10px;
+    margin-bottom:14px;
+}
+
+
+#text {
+    display: inline-block;
+}
+
+#circles {
+    display: inline-block;
 }
