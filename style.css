@@ -86,3 +86,11 @@ p{
 #circles {
     display: inline-block;
 }
+
+#main {
+    position: relative;
+    top:600px;
+    left:10px;
+
+
+}
