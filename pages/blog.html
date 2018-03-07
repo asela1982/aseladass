@@ -31,49 +31,63 @@
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
     <!-- our stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 
 <body>
-    <header id="main">
+    <header>
         <h1>
-            <a href="">Asela Dassanayake</a>
+            <a href="../index.html">Asela Dassanayake</a>
         </h1>
 
         <nav>
             <ul>
                 <li>
-                    <a href='pages/about.html'>My Story</a>
+                    <a href="about.html">My Story</a>
                 </li>
                 <li>
-                    <a href='pages/projects.html'>Projects</a>
+                    <a href='projects.html'>Projects</a>
                 </li>
                 <li>
-                    <a href="pages/blog.html">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
                     <a href="">Library</a>
                 </li>
                 <li>
-                    <a href="pages/contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <h2>Articles</h2>
 
-    <div id="forceLayout"></div>
+    <div class="row">
+
+        <div class="col-md-3">
+           <ul class="blogs">
+            <li> <a href="https://medium.com/@asela.d82/using-web-scrapping-to-mine-for-insights-66a21df81435" target="_blank">Using web scrapping to mine for insights</a></li>
+            <li><a href="https://medium.com/aseladassanayake/exploring-the-underground-c2d687ccae1b" target="_blank">Exploring the Unknown</a></li>
+            <li> <a href="https://medium.com/aseladassanayake/exploratory-data-analysis-using-apis-5cee03894d52" target="_blank">Exploratory Data Analysis using APIs</a></li>
+            <li><a href="https://medium.com/aseladassanayake/pandas-for-data-analysis-bcc2327664e7" target="_blank">Pandas for Data Analysis</a></li>
+           </ul>
+        </div>
+
+        
+        <div class="col-md-9">
+            <div id="#">           
+            </div>
+        </div>
+
+    </div>
 
 
-    <footer>
-        <p>Copyright © 2018 Asela Dassanayake</p>      
-    </footer>
 
+    
 
-    <script src="logic.js"></script>
-
-
+    <script src="../logic.js"></script>
 
 </body>
 

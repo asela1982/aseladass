@@ -73,6 +73,10 @@ nav ul li{
     margin-right: 5px;
 }
 
+.blogs li{
+    list-style-type: square;
+}
+
 #text{
     width: 400px;
 }
@@ -100,4 +104,13 @@ p{
 #map{
     height: 500px;
     width: 1000px;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    line-height: 14px;
 }
