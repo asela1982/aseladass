@@ -4,6 +4,11 @@ body{
 }
 
 
+span{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
 a:visited {
     text-decoration: none;
     color: #555;
@@ -19,7 +24,6 @@ a{
     color: #555;
     border-bottom: 1px solid #ccc;
 }
-
 
 
 header  {
@@ -91,6 +95,9 @@ p{
     position: relative;
     top:600px;
     left:10px;
+}
 
-
+#map{
+    height: 500px;
+    width: 1000px;
 }
