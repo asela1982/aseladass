@@ -50,6 +50,14 @@ h2 {
     font-style: normal;
 }
 
+
+h4 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
 nav{
     position: absolute;
     top:12px;
@@ -114,3 +122,6 @@ footer{
     font-size: 12px;
     line-height: 14px;
 }
+
+
+  
