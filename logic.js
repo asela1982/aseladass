@@ -226,9 +226,7 @@ L.marker([6.9271,79.8612]).bindPopup('BSc in Physical Sciences').addTo(mymap)
 L.marker([48.8566,2.3522]).bindPopup('MBA in International Finance').addTo(mymap)
 L.marker([30.2672, -97.7431]).bindPopup('Program in Data Analytics and Visualization').addTo(mymap)
 L.marker([1.3521, 103.8198]).bindPopup('Tableau Conference on Tour').addTo(mymap)
-
-
-
+L.marker([45.5017, -73.5673]).bindPopup('John Molson MBA International Case Competition').addTo(mymap)
 
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
