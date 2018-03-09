@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asela's Portfolio Page</title>
+
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- d3 cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <!-- our stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="../index.html">Asela Dassanayake</a>
+        </h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="about.html">My Story</a>
+                </li>
+                <li>
+                    <a href='projects.html'>Projects</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="library.html">Library</a>
+                </li>
+                <li>
+                    <a href="acknowledgments.html">Acknowledgments</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>A Short Summary</h2>
+        </div>
+
+        <div class="col-md-6">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Timeline</h2>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Some of my Skills</h2>
+
+            <div class="radio" style="margin-left:30px">
+                <label class="radio-inline">
+                    <input type="radio" name="skills" id="inlineRadio1" value="vi" onclick="change(this.value)" checked> Visualization
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="skills" id="inlineRadio2" value="ml" onclick="change(this.value)"> Machine Learning
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"name="skills" id="inlineRadio3" value="da" onclick="change(this.value)"> Data Analysis
+                </label>
+
+                <label class="radio-inline">
+                    <input type="radio" name="skills" id="inlineRadio3" value="db" onclick="change(this.value)"> Database
+                </label>
+
+                <label class="radio-inline">
+                    <input type="radio" name="skills" id="inlineRadio3" value="wa" onclick="change(this.value)"> Web Applications
+                </label>
+
+                <label class="radio-inline">
+                    <input type="radio" name="skills" id="inlineRadio3" value="bd" onclick="change(this.value)"> Big Data
+                </label>
+
+            </div>
+
+
+            <div id="chart"></div>
+
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Experience</h2>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="col-md-6">
+            <h2>
+                <span class="glyphicon glyphicon-education"></span> Education </h2>
+            <ul>
+                <li style="line-height: 1.5;margin-bottom:10px">
+                    <stong>Program in Data Analytics and Visualization.</stong>
+                    <br>
+                    <span> University of Texas, Austin, USA</span>
+                    <br>
+                    <span> Oct 2017 ⤑ Present</span>
+                </li>
+                <li style="line-height: 1.5;margin-bottom:10px">
+                    <stong>Program in Data Exploration and An Introduction to Statistical Learning.</stong>
+                    <br>
+                    <span> Dunder Data, Houston, USA</span>
+                    <br>
+                    <span> Aug 2017 ⤑ Sep 2017</span>
+                </li>
+                <li style="line-height: 1.5;margin-bottom:10px">
+                    <stong>MBA in International Finance.</stong>
+                    <br>
+                    <span> Paris, France</span>
+                    <br>
+                    <span> 2010 ⤑ 2011</span>
+                </li>
+                <li style="line-height: 1.5;margin-bottom:10px">
+                    <stong>BS in Physical Sciences.</stong>
+                    <br>
+                    <span> Colombo, Sri Lanka</span>
+                    <br>
+                    <span> 2003 ⤑ 2006</span>
+                </li>
+                <li style="line-height: 1.5;margin-bottom:10px">
+                    <stong>Advanced Diploma in Management Accountancy.</stong>
+                    <br>
+                    <span> Colombo, Sri Lanka</span>
+                    <br>
+                    <span> 2003 ⤑ 2006</span>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+    <script src="../bubble.js"></script>
+
+</body>
+
+</html>
