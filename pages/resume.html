@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
+    <!-- vis.js -->
+    <script src="../vis/vis.min.js"></script>
+    <link href="../vis/vis.min.css" rel="stylesheet" type="text/css" />
+
     <!-- our stylesheet -->
     <link rel="stylesheet" href="../style.css">
 
@@ -82,14 +86,19 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h2>Timeline</h2>
+
+            <h2><span class="glyphicon glyphicon-time" aria-hidden="true" style="font-size: 15px"></span> Timeline</h2>
+
+            <div id="visualization"></div>
         </div>
     </div>
 
 
     <div class="row">
         <div class="col-md-8">
-            <h2>Some of my Skills</h2>
+
+            <h2><span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size: 15px"></span> Some of my Skills</h2>
+
 
             <div class="radio" style="margin-left:30px">
                 <label class="radio-inline">
@@ -133,8 +142,7 @@
         </div>
 
         <div class="col-md-6">
-            <h2>
-                <span class="glyphicon glyphicon-education"></span> Education </h2>
+            <h2><span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 15px"></span> Education </h2>
             <ul>
                 <li style="line-height: 1.5;margin-bottom:10px">
                     <stong>Program in Data Analytics and Visualization.</stong>
@@ -179,6 +187,7 @@
 
 
     <script src="../bubble.js"></script>
+    <script src="../timeline.js"></script>
 
 </body>
 
