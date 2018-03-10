@@ -3,7 +3,7 @@ function change(value) {
   if (value === 'vi') {
     var data = [
       ["Tableau", 8], ["D3.js", 3], ["Plotly.js", 6],
-      ["Leaflet.js", 4], ["Seaborn", 6],
+      ["Leaflet.js", 4],["Seaborn", 6],
       ["Matplotlib", 7],["Vis.js", 5]
     ];
     update(data)
@@ -17,33 +17,34 @@ function change(value) {
 
   } if (value === 'da') {
     var data = [
-      ["Tableau", 8], ["Pandas", 7], ["R", 3]
+      ["Tableau", 8], ["Pandas", 7], ["R", 3], ["Jupyter",9]
     ];
     update(data)
 
   } if (value === 'db') {
     var data = [
       ["MySql", 6], ["Postgres", 3], ["AQL", 2],
-      ["SQLite", 4], ["MS Access", 8]
+      ["SQLite", 4], ["MS Access", 8], ["SQLAlchemy",5]
+      ,["MongoDB",4]
     ];
     update(data)
 
   } if (value === 'wa') {
     var data = [
-      ["Flask", 7], ["Python", 4], ["Heroku", 5],["API",5],
-      ["HTML",4],["CSS",4],["Bootstrap",5],["JavaScript",3]
+      ["Flask", 7], ["Python", 4],["Heroku", 5],["API",5],
+      ["HTML",4],["CSS",4],["Bootstrap",5],["JavaScript",3],
+      ["SQLAlchemy",5],["Git",6]
     ];
     update(data)
 
   } if (value === 'bd') {
     var data = [
-      ["Hadoop", 10], ["Pig", 4], ["Hive", 5],
-      ["Sqoop", 4]
+      ["Hadoop", 10],["Pig", 4], ["Hive", 5],
+      ["Sqoop", 4],["Docker",3],["AWS",3]
     ];
     update(data)
   }
 };
-
 
 
 var width = 500;

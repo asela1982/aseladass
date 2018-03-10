@@ -14,10 +14,9 @@
     {id: 9, content: 'Officer, Consumer Credit, Standard Chartered Bank', start: '2008-08-01', end: '2010-07-30',style:"color:white;background-color: #20A5C0;border:0px"},
     {id: 10, content: 'John Molson MBA Case Competition', start: '2011-01-01',style:"color:white;background-color: #303B60;border:0px"},
     {id: 11, content: 'Tableau Conference on Tour', start: '2015-01-01',style:"color:white;background-color: #303B60;border:0px"},
+    {id: 12, content: 'SciPy Conference, Austin, Texas', start: '2017-07-10',style:"color:white;background-color: #303B60;border:0px"}
   ]);
 
- 
-  
   // Configuration for the Timeline
   var options = {};
 

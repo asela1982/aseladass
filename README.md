@@ -7,7 +7,9 @@ https://asela1982.github.io/site/
 * My Story
 * Projects
 * Blog Articles
+* Library
 * Acknowledgements
+* Resume
 * Contact
 
 
