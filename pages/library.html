@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115516655-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115516655-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -111,9 +122,9 @@
                 <input type="button" value="Generate a new set of random numbers">
             </p>
 
-            <p style="margin-right:100px">You can visualize the randomely generated data points in <strong>3-dimenstional view</strong> with the 
-             assistance of your mouse or any other pointing device by dragging the plot in different directions.
-            Click on a dot to view its XYZ coordinates. The plot was created using vis.js.</p>
+            <p style="margin-right:100px">You can visualize the randomely generated data points in
+                <strong>3-dimenstional view</strong> with the assistance of your mouse or any other pointing device by dragging the
+                plot in different directions. Click on a dot to view its XYZ coordinates. The plot was created using vis.js.</p>
 
             <div id="mygraph"></div>
         </div>
