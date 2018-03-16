@@ -15,3 +15,7 @@ https://asela1982.github.io/site/
 
 #### Home page
 ![homepage](pages/images/landingpage.png)
+
+
+#### Enanbled Google Analytics to gain additional insights based on user interactions
+![googleanalytics](pages/images/googleanalytics.png)
