@@ -39,8 +39,7 @@ function change(value) {
 
   } if (value === 'bd') {
     var data = [
-      ["Hadoop", 10],["Pig", 4], ["Hive", 5],
-      ["Sqoop", 4],["Docker",3],["AWS",3]
+      ["MapReduce", 7],["MRJob", 4], ["Spark", 5]
     ];
     update(data)
   }
