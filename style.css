@@ -4,6 +4,13 @@ body{
 }
 
 
+ul#tags li{
+    display: inline;
+    margin: 0 0 0 10px;
+    padding: 0;
+  }
+
+
 span{
     color: #555;
 }
