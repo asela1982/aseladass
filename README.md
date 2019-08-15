@@ -11,6 +11,7 @@ https://asela1982.github.io/site/
 * Acknowledgements
 * Resume
 * Contact
+* Philanthropy
 
 
 #### Home page
