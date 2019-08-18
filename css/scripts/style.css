@@ -136,6 +136,8 @@ footer{
 
 .gallery{
     margin: 10px 50px;
+    display: none;
+  
 }
 
 .gallery img{
@@ -147,4 +149,9 @@ footer{
 .gallery img:hover{
     filter: grayscale(0%);
     transform: scale(0.95);
+}
+
+.philanthropy-projects img:hover{
+
+    cursor: pointer;
 }
