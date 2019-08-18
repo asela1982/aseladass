@@ -91,6 +91,10 @@ nav ul li{
     list-style-type: square;
 }
 
+.blogs a{
+    border-bottom: none;
+}
+
 #text{
     width: 400px;
 }
