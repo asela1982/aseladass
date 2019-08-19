@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Training</title>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,8 +23,8 @@
 
 
     <!-- lightbox gallery css and js -->
-    <link href="./css/lightbox/lightbox.min.css" rel="stylesheet" />
-    <script src="./js/lightbox/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+    <link href="../css/lightbox/lightbox.min.css" rel="stylesheet" />
+    <script src="../js/lightbox/lightbox-plus-jquery.min.js" type="text/javascript"></script>
 
 
     <!-- googlefonts -->
@@ -48,62 +52,74 @@
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
     <!-- vis.js -->
-    <script src="./js/vis/vis.min.js"></script>
-    <link href="./js/vis/vis.min.css" rel="stylesheet" type="text/css" />
+    <script src="../js/vis/vis.min.js"></script>
+    <link href="../js/vis/vis.min.css" rel="stylesheet" type="text/css" />
 
     <!-- our stylesheet -->
-    <link rel="stylesheet" href="./css/scripts/style.css">
-
+    <link rel="stylesheet" href="../css/scripts/style.css">
 </head>
 
 <body>
-    <header id="main">
+    <header>
         <h1>
-            <a href="">Asela Dassanayake</a>
+            <a href="../index.html">Asela Dassanayake</a>
         </h1>
 
         <nav>
             <ul>
                 <li>
-                    <a href='pages/about.html'>My Story</a>
+                    <a href="about.html">My Story</a>
                 </li>
                 <li>
-                    <a href='pages/projects.html'>Data-Projects</a>
+                    <a href='projects.html'>Data-Projects</a>
                 </li>
                 <li>
-                    <a href='pages/training.html'>Training</a>
+                    <a href="training.html">Training</a>
                 </li>
                 <li>
-                    <a href="pages/blog.html">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="pages/library">Library</a>
+                    <a href="library.html">Library</a>
                 </li>
                 <li>
-                    <a href="pages/philanthropy.html">Philanthropy</a>
+                    <a href="philanthropy.html">Philanthropy</a>
                 </li>
                 <li>
-                    <a href="pages/acknowledgments.html">Acknowledgments</a>
+                    <a href="acknowledgments.html">Acknowledgments</a>
                 </li>
                 <li>
-                    <a href="pages/resume.html">Resume</a>
+                    <a href="resume.html">Resume</a>
                 </li>
                 <li>
-                    <a href="pages/contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
+
+
             </ul>
         </nav>
     </header>
 
 
-    <div id="forceLayout"></div>
+    <div id="root"></div>
+    <script>
+        // Create a request variable and assign a new XMLHttpRequest object to it.
+        var request = new XMLHttpRequest()
+
+        // Open a new connection, using the GET request on the URL endpoint
+        request.open('GET', 'http://api.meetup.com/Colombo-Data-Driven?&sign=true&photo-host=public&key=6178756c2f194627413177171e5f3f2f', true)
+
+        request.onload = function () {
+            // Begin accessing JSON data here
+            var data = JSON.parse(this.response)
+            cosnole.log(data);
+        }
+
+        // Send request
+        request.send()
 
 
-    <!-- javascript -->
-    <script src="./js/scripts/logic.js"></script>
-
-
-
+    </script>
 </body>
 
 </html>
