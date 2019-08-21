@@ -2,7 +2,7 @@
 function change(value) {
   if (value === 'vi') {
     var data = [
-      ["Tableau", 8], ["D3.js", 3], ["Plotly.js", 6],
+      ["Tableau", 8],["Power BI", 8],["D3.js", 3], ["Plotly.js", 6],
       ["Leaflet.js", 4],["Seaborn", 6],
       ["Matplotlib", 7],["Vis.js", 5]
     ];
@@ -17,7 +17,7 @@ function change(value) {
 
   } if (value === 'da') {
     var data = [
-      ["Tableau", 8], ["Pandas", 7], ["R", 3], ["Jupyter",9]
+      ["Tableau", 8], ["Power BI", 8], ["Pandas", 7], ["R", 3], ["Jupyter",9]
     ];
     update(data)
 
@@ -39,7 +39,7 @@ function change(value) {
 
   } if (value === 'bd') {
     var data = [
-      ["MapReduce", 7],["MRJob", 4], ["Spark", 5]
+      ["BigQuery",5], ["PySpark",4]
     ];
     update(data)
   }
@@ -50,9 +50,9 @@ var width = 500;
 var height = 375;
 
 var viz = [
-  ["Tableau", 8], ["D3.js", 4], ["Plotly.js", 6],
-  ["Leaflet.js", 4], ["Seaborn", 6],
-  ["Matplotlib", 7],["vis.js", 5]
+  ["Tableau", 8],["Power BI", 8],["D3.js", 3], ["Plotly.js", 6],
+  ["Leaflet.js", 4],["Seaborn", 6],
+  ["Matplotlib", 7],["Vis.js", 5]
 ];
 
 var svg = d3.select('#chart')

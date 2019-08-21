@@ -15,7 +15,8 @@
     {id: 10, content: 'John Molson MBA Case Competition', start: '2011-01-01',style:"color:white;background-color: #303B60;border:0px"},
     {id: 11, content: 'Tableau Conference on Tour', start: '2016-01-01',style:"color:white;background-color: #303B60;border:0px"},
     {id: 12, content: 'SciPy Conference, Austin, Texas', start: '2017-07-10',style:"color:white;background-color: #303B60;border:0px"},
-    {id: 13, content: 'Senior Manager-Data Analytics, FriMi Digital Bank', start: '2018-05-02',style:"color:white;background-color: #20A5C0;border:0px"}
+    {id: 13, content: 'Senior Manager-Data Analytics, FriMi Digital Bank', start: '2018-05-02', end: '2018-12-31', style:"color:white;background-color: #20A5C0;border:0px"},
+    {id: 14, content: 'Freelance Data Scientist', start: '2019-01-01',style:"color:white;background-color: #F39B6D;border:0px"}
     
   
   ]);
