@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115516655-1"></script>
@@ -56,15 +53,18 @@
     <!-- our stylesheet -->
     <link rel="stylesheet" href="../css/scripts/style.css">
 
-
 </head>
 
 <body>
+
+
     <header>
         <h1 id="logo">
             <a href="../index.html">Asela Dassanayake</a>
         </h1>
+
         <nav>
+
             <ul>
                 <li>
                     <a href='about.html'>My Story</a>
@@ -93,6 +93,14 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+
+
+                <li>
+                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                    <script
+                        type='text/javascript'>kofiwidget2.init('Support Me', '#b8468a', 'O4O111N7W'); kofiwidget2.draw();</script>
+
+                </li>
             </ul>
         </nav>
     </header>
@@ -110,8 +118,38 @@
             onClick="reply_click(this)"></a>
     </div>
 
-    <!-- data_projects_viz -->
-    <div>
+
+
+
+    <p style="font-size: 12px; margin-top:50px">Copyright © 2018 Asela Dassanayake</p>
+
+
+
+    <!-- javascript -->
+    <script type="text/javascript">
+
+        function reply_click(clicked_object) {
+
+            var data_projects = document.getElementsByClassName("data_projects");
+
+            for (var i = 0; i < data_projects.length; i++) {
+                data_projects[i].setAttribute("style", "display: none;")
+            }
+            var element = clicked_object.getAttribute('data-name')
+
+            document.getElementById(element).style.display = "block";
+
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- data_projects_viz -->
+<!-- <div>
         <div class="col-md-12">
 
             <div class="data_projects" id="data_projects_viz">
@@ -175,31 +213,4 @@
 
             </div>
         </div>
-    </div>
-
-
-
-    <p style="font-size: 12px; margin-top:50px">Copyright © 2018 Asela Dassanayake</p>
-
-
-
-    <!-- javascript -->
-    <script type="text/javascript">
-
-        function reply_click(clicked_object) {
-
-            var data_projects = document.getElementsByClassName("data_projects");
-
-            for (var i = 0; i < data_projects.length; i++) {
-                data_projects[i].setAttribute("style", "display: none;")
-            }
-            var element = clicked_object.getAttribute('data-name')
-
-            document.getElementById(element).style.display = "block";
-
-        }
-
-    </script>
-</body>
-
-</html>
+    </div> -->
