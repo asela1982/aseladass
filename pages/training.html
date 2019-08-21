@@ -185,14 +185,16 @@
 
                 <h2 style="color: #efaa00; ">Details</h2>
 
-                <p>Total Number of Members as of now: <span id="members-root"></span></p> 
+                <p>Total Number of Members as of now: <span id="members-root"></span></p>
 
-                    <table id="meetups">
-                    </table>
+                <p>Total Number of Meetups held: <span id="meetups-root"></span></p>
+                <table id="meetups">
+                </table>
 
-                </div>
+
             </div>
         </div>
+    </div>
     </div>
 
     <!-- workshops -->
@@ -252,18 +254,18 @@
         var request = new XMLHttpRequest()
 
         // Open a new connection, using the GET request on the URL endpoint
-        request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.meetup.com/Colombo-Data-Driven?&sign=true&photo-host=public&key=6178756c2f194627413177171e5f3f2f', true)
+        request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.meetup.com/Colombo-Data-Driven?&sign=true&photo-host=public', true)
 
         request.setRequestHeader("Access-Control-Allow-Origin", "*")
         request.onload = function () {
             // Begin accessing JSON data here
             var data = JSON.parse(this.response)
 
-            var members = document.createElement("h1");
-            members.textContent = data.members;
+            var membercount = document.createElement("h1");
+            membercount.textContent = data.members;
 
-            var root = document.getElementById("members-root");
-            root.appendChild(members);
+            var root_members = document.getElementById("members-root");
+            root_members.appendChild(membercount);
         }
 
         // Send request
@@ -316,7 +318,13 @@
                     + '<td>' + events[i].status + '</td>'
                     ;
                 table.appendChild(tr);
+
             }
+
+            var meetupscount = document.createElement("h1");
+            meetupscount.textContent = events.length;
+            var root_meetups = document.getElementById("meetups-root");
+            root_meetups.appendChild(meetupscount);
 
         }
 
