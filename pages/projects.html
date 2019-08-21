@@ -25,7 +25,8 @@
 
 
     <!-- googlefonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500&display=swap" rel="stylesheet">
+
 
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -66,13 +67,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="about.html">My Story</a>
+                    <a href='about.html'>My Story</a>
                 </li>
                 <li>
-                    <a href='projects.html'>Data-Projects</a>
+                    <a href="resume.html">Resume</a>
                 </li>
                 <li>
-                    <a href="training.html">Training</a>
+                    <a href='training.html'>Training</a>
+                </li>
+                <li>
+                    <a href="philanthropy.html">Philanthropy</a>
                 </li>
                 <li>
                     <a href="blog.html">Blog</a>
@@ -81,98 +85,115 @@
                     <a href="library.html">Library</a>
                 </li>
                 <li>
-                    <a href="philanthropy.html">Philanthropy</a>
+                    <a href='projects.html'>Data-Projects</a>
                 </li>
                 <li>
                     <a href="acknowledgments.html">Acknowledgments</a>
                 </li>
                 <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-                <li>
                     <a href="contact.html">Contact</a>
                 </li>
-
-
             </ul>
         </nav>
     </header>
 
 
-    <h2>Projects</h2>
+    <!-- projects -->
+    <div class="project-thumbnails">
+        <img src="images/data-projects/data-viz.png" data-name="data_projects_viz" style="width: 250px;" alt=""
+            onClick="reply_click(this)"></a>
+        <img src="images/data-projects/web-apps.png" data-name="data_projects_webapps" style="width: 250px;" alt=""
+            onClick="reply_click(this)"></a>
+        <img src="images/data-projects/ml.png" data-name="data_projects_ml" style="width: 250px;" alt=""
+            onClick="reply_click(this)"></a>
+        <img src="images/data-projects/web-scrap.png" data-name="data_projects_webscrap" style="width: 250px;" alt=""
+            onClick="reply_click(this)"></a>
+    </div>
+
+    <!-- data_projects_viz -->
+    <div>
+        <div class="col-md-12">
+
+            <div class="data_projects" id="data_projects_viz">
+
+                <ul>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/Belly-Button-Biodiversity-Interactive-Dashboard"
+                            target="_blank">
+                            <img src="images/bellybutton.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Belly Button Biodiversity Interactive Dashboard</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/Data-Journalism-and-D3.git" target="_blank">
+                            <img src="images/datajournalism.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Data Journalism and D3</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/utdatanalytics-wk13-Web-Scrapping-and-Mongo"
+                            target="_blank">
+                            <img src="images/missiontomars.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Mission to Mars</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/earthquake-viz">
+                            <img src="images/earthquake.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Visualize earthquakes using leaflet</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/landslides-app" target="_blank">
+                            <img src="images/landslides.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Landslides Dashboard</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/webapps_fitnessbuddy" target="_blank">
+                            <img src="images/fitnessbuddy.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Fitness Buddy</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/weather-app" target="_blank">
+                            <img src="images/weather.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>What's the weather like?</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://www.kaggle.com/aselad/why-are-our-employees-leaving-prematurely"
+                            target="_blank">
+                            <img src="images/employees.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>Why are our employees leaving prematurely?</a>
+                    </li>
+                    <li style="text-align:center;margin-top:30px;">
+                        <a href="https://github.com/asela1982/utdatanalytics-wk14-Intro-To-JavaScript" target="_blank">
+                            <img src="images/ufo.png" alt="" style="display:block;width:80%;margin: auto">
+                            <br>We May Not be a Alone</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
 
 
-    <p> The latest project I am working on is to build a machine learning text classifier on yelp reviews using Spark
-        and Naive bayes.
-    </p>
-
-
-    <ul class="projects">
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/Belly-Button-Biodiversity-Interactive-Dashboard" target="_blank">
-                <img src="images/bellybutton.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Belly Button Biodiversity Interactive Dashboard</a>
-        </li>
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/Data-Journalism-and-D3.git" target="_blank">
-                <img src="images/datajournalism.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Data Journalism and D3</a>
-        </li>
-
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/utdatanalytics-wk13-Web-Scrapping-and-Mongo" target="_blank">
-                <img src="images/missiontomars.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Mission to Mars</a>
-        </li>
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/earthquake-viz">
-                <img src="images/earthquake.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Visualize earthquakes using leaflet</a>
-        </li>
-
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/landslides-app" target="_blank">
-                <img src="images/landslides.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Landslides Dashboard</a>
-        </li>
-
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/webapps_fitnessbuddy" target="_blank">
-                <img src="images/fitnessbuddy.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Fitness Buddy</a>
-        </li>
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/weather-app" target="_blank">
-                <img src="images/weather.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>What's the weather like?</a>
-        </li>
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://www.kaggle.com/aselad/why-are-our-employees-leaving-prematurely" target="_blank">
-                <img src="images/employees.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>Why are our employees leaving prematurely?</a>
-        </li>
-
-
-        <li style="text-align:center;margin-top:30px;">
-            <a href="https://github.com/asela1982/utdatanalytics-wk14-Intro-To-JavaScript" target="_blank">
-                <img src="images/ufo.png" alt="" style="display:block;width:80%;margin: auto">
-                <br>We May Not be a Alone</a>
-        </li>
-
-    </ul>
 
     <p style="font-size: 12px; margin-top:50px">Copyright © 2018 Asela Dassanayake</p>
 
-    <!-- JavaScript -->
-    <script src="../js/scripts/logic.js"></script>
 
+
+    <!-- javascript -->
+    <script type="text/javascript">
+
+        function reply_click(clicked_object) {
+
+            var data_projects = document.getElementsByClassName("data_projects");
+
+            for (var i = 0; i < data_projects.length; i++) {
+                data_projects[i].setAttribute("style", "display: none;")
+            }
+            var element = clicked_object.getAttribute('data-name')
+
+            document.getElementById(element).style.display = "block";
+
+        }
+
+    </script>
 </body>
 
 </html>

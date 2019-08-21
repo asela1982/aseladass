@@ -150,11 +150,15 @@ footer{
   
 }
 
+.training{
+    margin: 10px 25px;
+    display: none;
+}
+
 .gallery img{
     padding: 5px;
     filter: grayscale(100%);
     transition: 1s;
-
 }
 
 

@@ -29,7 +29,7 @@
 
 
     <!-- googlefonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -69,13 +69,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="about.html">My Story</a>
+                    <a href='about.html'>My Story</a>
                 </li>
                 <li>
-                    <a href='projects.html'>Data-Projects</a>
+                    <a href="resume.html">Resume</a>
                 </li>
                 <li>
-                    <a href="training.html">Training</a>
+                    <a href='training.html'>Training</a>
+                </li>
+                <li>
+                    <a href="philanthropy.html">Philanthropy</a>
                 </li>
                 <li>
                     <a href="blog.html">Blog</a>
@@ -84,19 +87,14 @@
                     <a href="library.html">Library</a>
                 </li>
                 <li>
-                    <a href="philanthropy.html">Philanthropy</a>
+                    <a href='projects.html'>Data-Projects</a>
                 </li>
                 <li>
                     <a href="acknowledgments.html">Acknowledgments</a>
                 </li>
                 <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-                <li>
                     <a href="contact.html">Contact</a>
                 </li>
-
-
             </ul>
         </nav>
     </header>
@@ -114,9 +112,12 @@
     <div class="row">
         <div class="col-md-4">
 
-            <div class="gallery" id="trainings-meetups-text">
+            <div class="training" id="trainings-meetups-text">
 
                 <h2 style="color: #efaa00; ">About</h2>
+
+
+                <img src="images/Trainings/logo.png" alt="" style="width: 250px; display:block; margin: auto">
 
                 <p>Formed the <a href="https://www.meetup.com/Colombo-Data-Driven/" target="_blank">Colombo
                         Data-Driven</a> Meetup group during the beginning of the year 2019. The objectives of forming
@@ -138,9 +139,10 @@
 
                 <hr>
 
-                <p> The meetups are structured under two tracks:
+                <p>
+                    <h3>The meetups are structured under two tracks:</h3>
 
-                    <h4>Data Analyst track</h4>
+                    <h5>Data Analyst track</h5>
                     <p>The objective of this track is to introduce participants to a set of analytical skills needed to
                         support
                         the <mark> collecting, cleansing, transforming, visualizing, and analyzing </mark> of data using
@@ -158,7 +160,7 @@
 
                     <hr>
 
-                    <h4>Data Scientist track</h4>
+                    <h5>Data Scientist track</h5>
                     <p> This track introduces attendees to carry out data analytical tasks <mark>programatically</mark>
                         using
                         Open-source, scientific
@@ -181,7 +183,7 @@
 
 
         <div class="col-md-8">
-            <div class="gallery" id="trainings-meetups-gallery">
+            <div class="training" id="trainings-meetups-gallery">
 
                 <h2 style="color: #efaa00; ">Details</h2>
 
@@ -195,34 +197,19 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- workshops -->
     <div>
-        <div class="col-md-4">
+        <div class="col-md-12">
 
-            <div class="gallery" id="trainings-workshops-text">
+            <div class="training" id="trainings-workshops-text">
 
-                <h2 style="color: #efaa00; ">About the project</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore vitae doloremque quae et, voluptate
-                    aspernatur explicabo quibusdam ex laboriosam laborum deserunt excepturi assumenda eligendi
-                    exercitationem sunt obcaecati? Officiis, non aspernatur.</p>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nisi temporibus laudantium!
-                    Assumenda
-                    minima aut consequuntur vel ut accusantium animi iusto perspiciatis sed, obcaecati harum quis ex
-                    repellendus dolor? Harum.</p>
-            </div>
-        </div>
-
-        <div class="col-md-8">
-            <div class="gallery" id="trainings-workshops-gallery">
-
-                <h2 style="color: #efaa00; ">Some of the captured moments...</h2>
+                <img src="images/Trainings/business_intelligence.jpg" alt="" style=" display:block; margin: auto">
 
             </div>
         </div>
+
     </div>
 
 
@@ -232,10 +219,10 @@
 
         function reply_click(clicked_object) {
 
-            var galleries = document.getElementsByClassName("gallery");
+            var trainings = document.getElementsByClassName("training");
 
-            for (var i = 0; i < galleries.length; i++) {
-                galleries[i].setAttribute("style", "display: none;")
+            for (var i = 0; i < trainings.length; i++) {
+                trainings[i].setAttribute("style", "display: none;")
             }
 
             var element_text = clicked_object.getAttribute('data-name') + '-text';
