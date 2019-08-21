@@ -62,7 +62,7 @@
 
 <body>
     <header>
-        <h1>
+        <h1 id="logo">
             <a href="../index.html">Asela Dassanayake</a>
         </h1>
 
@@ -102,27 +102,228 @@
     </header>
 
 
-    <div id="root"></div>
+    <!-- trainings -->
+    <div class="project-thumbnails">
+        <img src="images/Trainings/meetup.png" data-name="trainings-meetups" style="width: 250px;" alt=""
+            onClick="reply_click(this)"></a>
+        <img src="images/Trainings/workshops.png" data-name="trainings-workshops" style="width: 250px;" alt=""
+            onClick="reply_click(this)"></a>
+    </div>
+
+    <!-- meetups -->
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="gallery" id="trainings-meetups-text">
+
+                <h2 style="color: #efaa00; ">About</h2>
+
+                <p>Formed the <a href="https://www.meetup.com/Colombo-Data-Driven/" target="_blank">Colombo
+                        Data-Driven</a> Meetup group during the beginning of the year 2019. The objectives of forming
+                    the
+                    group were to enhance my communication skills; to have a platform to share my data-analytical
+                    knowledge; and through teaching to further improve
+                    my data-analytical skills.
+                </p>
+
+                <hr>
+
+                <p>
+                    The details section shows the present number of members in the group aswell as details of all the
+                    meetups I have conducted so far.
+                    <small>As these information is fetched, real-time, from the meetup api, you might
+                        experience some latency in rendering the information.
+                    </small>
+                </p>
+
+                <hr>
+
+                <p> The meetups are structured under two tracks:
+
+                    <h4>Data Analyst track</h4>
+                    <p>The objective of this track is to introduce participants to a set of analytical skills needed to
+                        support
+                        the <mark> collecting, cleansing, transforming, visualizing, and analyzing </mark> of data using
+                        next-generation
+                        tools and
+                        platforms such as KNIME, Power BI, and Tableau. </p>
+                    <ul>
+                        <li>Learn SQL Basics</li>
+                        <li>Level Up SQL!</li>
+                        <li>Know your NoSQL with MongoDB</li>
+                        <li>Data Preparation and Analytics with KNIME</li>
+                        <li>Data Storytelling with Tableau</li>
+                        <li>Dashboarding with PowerBI</li>
+                    </ul>
+
+                    <hr>
+
+                    <h4>Data Scientist track</h4>
+                    <p> This track introduces attendees to carry out data analytical tasks <mark>programatically</mark>
+                        using
+                        Open-source, scientific
+                        libraries such as Pandas, Matplotlib, Seaborn, Scikit-learn, and Numpy in Python.</p>
+                    <ul>
+                        <li>Introduction to the Bash Command line</li>
+                        <li>Version Control with Git</li>
+                        <li>Programming with Python - Basics</li>
+                        <li>Programming with Python - Intermediate</li>
+                        <li>Data Analysis with Pandas </li>
+                        <li>Introdction to Machine Learning</li>
+                        <li>Kaggle Competition</li>
+                    </ul>
+
+                    <hr>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-md-8">
+            <div class="gallery" id="trainings-meetups-gallery">
+
+                <h2 style="color: #efaa00; ">Details</h2>
+
+                <p>Total Number of Members as of now: <span id="members-root"></span></p> 
+
+                    <table id="meetups">
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- workshops -->
+    <div>
+        <div class="col-md-4">
+
+            <div class="gallery" id="trainings-workshops-text">
+
+                <h2 style="color: #efaa00; ">About the project</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore vitae doloremque quae et, voluptate
+                    aspernatur explicabo quibusdam ex laboriosam laborum deserunt excepturi assumenda eligendi
+                    exercitationem sunt obcaecati? Officiis, non aspernatur.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nisi temporibus laudantium!
+                    Assumenda
+                    minima aut consequuntur vel ut accusantium animi iusto perspiciatis sed, obcaecati harum quis ex
+                    repellendus dolor? Harum.</p>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="gallery" id="trainings-workshops-gallery">
+
+                <h2 style="color: #efaa00; ">Some of the captured moments...</h2>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript -->
+    <script type="text/javascript">
+
+        function reply_click(clicked_object) {
+
+            var galleries = document.getElementsByClassName("gallery");
+
+            for (var i = 0; i < galleries.length; i++) {
+                galleries[i].setAttribute("style", "display: none;")
+            }
+
+            var element_text = clicked_object.getAttribute('data-name') + '-text';
+            var element_gallery = clicked_object.getAttribute('data-name') + '-gallery';
+
+            document.getElementById(element_text).style.display = "block";
+            document.getElementById(element_gallery).style.display = "block";
+        }
+
+    </script>
+
+
+    <!-- get number of members -->
     <script>
         // Create a request variable and assign a new XMLHttpRequest object to it.
         var request = new XMLHttpRequest()
 
         // Open a new connection, using the GET request on the URL endpoint
-        request.open('GET', 'https://api.meetup.com/Colombo-Data-Driven?&sign=true&photo-host=public&key=6178756c2f194627413177171e5f3f2f', true)
-
-        request.setRequestHeader("Access-Control-Allow-Origin", "*")
+        request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.meetup.com/Colombo-Data-Driven?&sign=true&photo-host=public&key=6178756c2f194627413177171e5f3f2f', true)
 
         request.onload = function () {
             // Begin accessing JSON data here
             var data = JSON.parse(this.response)
-            console.log(data.members);
+
+            var members = document.createElement("h1");
+            members.textContent = data.members;
+
+            var root = document.getElementById("members-root");
+            root.appendChild(members);
         }
 
         // Send request
         request.send()
-
-
     </script>
+
+
+    <!-- get events past -->
+    <script>
+        // Create a request variable and assign a new XMLHttpRequest object to it.
+        var request = new XMLHttpRequest()
+
+        // Open a new connection, using the GET request on the URL endpoint
+        request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.meetup.com/Colombo-Data-Driven/events?&sign=true&photo-host=public&page=20&status=past', true)
+
+        request.setRequestHeader("Access-Control-Allow-Origin", "*")
+        var table = document.getElementById("meetups");
+
+
+        request.onload = function () {
+            // Begin accessing JSON data here
+            var events = JSON.parse(this.response);
+
+            var tr = document.createElement('tr');
+            tr.innerHTML =
+                '<th>' + 'Meetup#' + '</th>'
+                + '<th>' + 'Name' + '</th>'
+                + '<th>' + 'Date' + '</th>'
+                + '<th>' + 'RSVP Limit' + '</th>'
+                + '<th>' + 'RSVP Count' + '</th>'
+                + '<th>' + 'Waitlist Count' + '</th>'
+                + '<th>' + 'Venue' + '</th>'
+                + '<th>' + 'Country' + '</th>'
+                + '<th>' + 'Status' + '</th>'
+
+            table.appendChild(tr);
+
+            for (var i = 0; i < events.length; ++i) {
+
+                var tr = document.createElement('tr')
+                tr.innerHTML =
+                    '<td>' + i + '</td>'
+                    + '<td>' + events[i].name + '</td>'
+                    + '<td>' + events[i].local_date + '</td>'
+                    + '<td>' + events[i].rsvp_limit + '</td>'
+                    + '<td>' + events[i].yes_rsvp_count + '</td>'
+                    + '<td>' + events[i].waitlist_count + '</td>'
+                    + '<td>' + events[i].venue.name + '</td>'
+                    + '<td>' + events[i].venue.localized_country_name + '</td>'
+                    + '<td>' + events[i].status + '</td>'
+                    ;
+                table.appendChild(tr);
+            }
+
+        }
+
+        // Send request
+        request.send()
+    </script>
+
+
 </body>
 
 </html>

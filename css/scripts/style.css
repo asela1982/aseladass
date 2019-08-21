@@ -39,7 +39,9 @@ header  {
 }
 
 
-h1{
+
+
+#logo{
     margin-left: 10px;
     margin-bottom: 10px;
     font-style: italic;
@@ -48,6 +50,11 @@ h1{
 h1 a:visited {
     color: #000;
 }
+
+h1 {
+    margin-left: 10px;
+}
+
 
 h2 {
     margin-left: 10px;
@@ -152,7 +159,23 @@ footer{
     transform: scale(0.95);
 }
 
-.philanthropy-projects img:hover{
+.project-thumbnails img:hover{
 
     cursor: pointer;
+}
+
+
+/* meetup table */
+
+table, th, td 
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 2px;
+    text-align: left;
+}
+
+th {
+    font-weight:bold;
+    text-align: center;
 }
