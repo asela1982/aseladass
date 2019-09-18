@@ -66,9 +66,7 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href='about.html'>My Story</a>
-                </li>
+
                 <li>
                     <a href="resume.html">Resume</a>
                 </li>
@@ -104,469 +102,487 @@
     </header>
 
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2>A Short Summary about Myself</h2>
+    <div class="container">
 
-            <p> I am Tableau Desktop Qualified Associate presently working as a freelancer/consultant on data analytics.
-                I am also the founder of the <a
-                    href="https://www.meetup.com/Colombo-Data-Driven/members/?sort=join_date&desc=true"
-                    target="_blank">Colombo Data-Driven movement</a> where I host weekly meetup events to build
-                fundamental data science skills using open-source tools among data enthusiastic individuals in Sri
-                Lanka.
+        <div class="row">
+            <div class="col-md-6">
+                <h2>A Short Summary about Myself</h2>
 
-                <br>
-                I am also a firm follower in the art of <a href="../certifications/Deep-Work-Summary.pdf"
-                    target="_blank">Deep
-                    work</a> in an age of distraction.
-                I am interested in work involving exploratory data analysis, data storytelling, predictive modeling,
-                business intelligence, and data integrations.
+                <p> I am Tableau Desktop Qualified Associate presently working as a freelancer/consultant on data
+                    analytics.
+                    I am also the founder of the <a
+                        href="https://www.meetup.com/Colombo-Data-Driven/members/?sort=join_date&desc=true"
+                        target="_blank">Colombo Data-Driven movement</a> where I host weekly meetup events to build
+                    fundamental data science skills using open-source tools among data enthusiastic individuals in Sri
+                    Lanka.
 
-                <br>
-                Apart from the professional work, I continuously seek time to be closer to the mother nature: I am a
-                PADI Advanced Open Water Diver(License Diver No.1811AT4810) and a biker.
+                    <br>
+                    I am also a firm follower in the art of <a href="../certifications/Deep-Work-Summary.pdf"
+                        target="_blank">Deep
+                        work</a> in an age of distraction.
+                    I am interested in work involving exploratory data analysis, data storytelling, predictive modeling,
+                    business intelligence, and data integrations.
 
-            </p>
+                    <br>
+                    Apart from the professional work, I continuously seek time to be closer to the mother nature: I am a
+                    PADI Advanced Open Water Diver(License Diver No.1811AT4810) and a biker.
+
+                </p>
+
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/resume/asela.jpeg" alt="" style="width: 300px; display:block; margin: 40px;">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    <span class="glyphicon glyphicon-time" aria-hidden="true" style="font-size: 15px"></span> Timeline
+                </h2>
+
+                <div id="visualization"></div>
+
+                <p style="font-size: 11px;margin-top:10px">** The above timeline represents the events, experiences, and
+                    recognitions I have had academelly and professionally;
+                    the color blue represents recogintions. The Timeline is interactive. To reset the visualization you
+                    may
+                    refresh
+                    the page. The above visualization was created using vis.js.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <h2>
+                    <span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size: 15px"></span> Some of my
+                    Skills</h2>
+
+
+                <div class="radio" style="margin-left:10px">
+                    <label class="radio-inline">
+                        <input type="radio" name="skills" id="inlineRadio1" value="vi" onclick="change(this.value)"
+                            checked>
+                        Visualization
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="skills" id="inlineRadio2" value="ml" onclick="change(this.value)">
+                        Machine Learning
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="skills" id="inlineRadio3" value="da" onclick="change(this.value)">
+                        Data
+                        Analysis
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="skills" id="inlineRadio3" value="db" onclick="change(this.value)">
+                        Database
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="skills" id="inlineRadio3" value="wa" onclick="change(this.value)"> Web
+                        Applications
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="skills" id="inlineRadio3" value="bd" onclick="change(this.value)"> Big
+                        Data
+                    </label>
+
+                </div>
+
+
+                <div id="chart"></div>
+                <p style="font-size: 11px">** The bubbles represent the tools I use for a given category of skill. The
+                    size
+                    of the bubble represents how
+                    confident I am using the tool and the overall experience I have had with it--These are the tools
+                    that I
+                    keep
+                    under my pillow. The visualization was created using the
+                    <strong>MAGNIFICENT</strong>
+                    d3.js. The simulation implements a
+                    <a href="https://github.com/d3/d3-force">velocity Verlet</a> numerical integrator for simulating
+                    physical forces on particles;Verlet integration is
+                    a numerical method used to integrate Newton's equations of motion (F=MA)
+                </p>
+
+            </div>
+
+            <div class="col-md-6">
+                <h2>
+                    <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 15px"></span>
+                    Education </h2>
+
+                <ul>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>Program in Data Analytics and Visualization.</stong>
+                        <br>
+                        <span> University of Texas, Austin, USA</span>
+                        <br>
+                        <span> Oct 2017 ⤑ Apr 2018</span>
+                    </li>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>Program in Data Exploration and An Introduction to Statistical Learning.</stong>
+                        <br>
+                        <span> Dunder Data, Houston, USA</span>
+                        <br>
+                        <span> Aug 2017 ⤑ Sep 2017</span>
+                    </li>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>MBA in International Finance.</stong>
+                        <br>
+                        <span> Paris School of Business, Paris, France</span>
+                        <br>
+                        <span> 2010 ⤑ 2011</span>
+                    </li>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>BS in Physical Sciences.</stong>
+                        <br>
+                        <span> University of Colombo, Colombo, Sri Lanka</span>
+                        <br>
+                        <span> 2003 ⤑ 2006</span>
+                    </li>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>Advanced Diploma in Management Accountancy</stong>
+                        <br>
+                        <span> CIMA, UK</span>
+                        <br>
+                        <span> 2003 ⤑ 2006</span>
+                    </li>
+                </ul>
+            </div>
 
         </div>
 
-        <div class="col-md-6">
-            <img src="images/resume/asela.jpeg" alt="" style="width: 300px; display:block; margin: 40px;">
-        </div>
-    </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <h2>
+                    <span class="glyphicon glyphicon-equalizer" aria-hidden="true" style="font-size: 15px"></span>
+                    Experience
+                </h2>
 
 
-    <div class="row">
-        <div class="col-md-12">
-            <h2>
-                <span class="glyphicon glyphicon-time" aria-hidden="true" style="font-size: 15px"></span> Timeline</h2>
-
-            <div id="visualization"></div>
-
-            <p style="font-size: 11px;margin-top:10px">** The above timeline represents the events, experiences, and
-                recognitions I have had academelly and professionally;
-                the color blue represents recogintions. The Timeline is interactive. To reset the visualization you may
-                refresh
-                the page. The above visualization was created using vis.js.
-            </p>
-        </div>
-    </div>
 
 
-    <div class="row">
-        <div class="col-md-6">
+                <h4>
+                    <strong>Freelance Data Scientist, 2019 Jan - present</strong>
+                </h4>
+                <ul>
+                    <li> Providing data analytical solutions to the following clients in United Kingdom:
 
-            <h2>
-                <span class="glyphicon glyphicon-list" aria-hidden="true" style="font-size: 15px"></span> Some of my
-                Skills</h2>
+                    </li>
+
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://carehires.com/" target="_blank"><img src="images/resume/carehires.jpg"
+                                    alt="" style="float:left; width: 100px;padding: 5px;"></a>
+                        </div>
+                        <div class="column">
+                            <a href="https://thegpservice.co.uk/" target="_blank"> <img
+                                    src="images/resume/gpservices.jpg" alt=""
+                                    style="float:left; width: 100px;padding: 5px;"></a>
+                        </div>
+                    </div>
 
 
-            <div class="radio" style="margin-left:10px">
-                <label class="radio-inline">
-                    <input type="radio" name="skills" id="inlineRadio1" value="vi" onclick="change(this.value)" checked>
-                    Visualization
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="skills" id="inlineRadio2" value="ml" onclick="change(this.value)">
-                    Machine Learning
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="skills" id="inlineRadio3" value="da" onclick="change(this.value)"> Data
-                    Analysis
-                </label>
+                    <li> Run regular meetups to share data analytical knowledge through the meetup group <a
+                            href="https://www.meetup.com/Colombo-Data-Driven/" target="_blank">Colombo Data-Driven </a>
+                        which I formed during the
+                        beginning of the year.
+                    </li>
+                    <li> Engaged with the <a href="https://www.casrilanka.com/" target="_blank">Institute of Chartered
+                            Accountants of Sri Lanka (ICASL)</a> to run workshops on data analytics.
+                    </li>
 
-                <label class="radio-inline">
-                    <input type="radio" name="skills" id="inlineRadio3" value="db" onclick="change(this.value)">
-                    Database
-                </label>
+                </ul>
 
-                <label class="radio-inline">
-                    <input type="radio" name="skills" id="inlineRadio3" value="wa" onclick="change(this.value)"> Web
-                    Applications
-                </label>
 
-                <label class="radio-inline">
-                    <input type="radio" name="skills" id="inlineRadio3" value="bd" onclick="change(this.value)"> Big
-                    Data
-                </label>
+                <h3>
+                    <a href="https://frimi.lk/" target="_blank">FriMi Digital Bank, Nations Trust Bank</a>
+                </h3>
+
+
+                <h4>
+                    <strong>Senior Manager Data Analytics(6.2) - FriMi Digital Bank, 2018 May - 2018 Dec</strong>
+                </h4>
+                <ul>
+                    <li> Provide regular insights to corporate management and the network based on MIS and analytics.
+                    </li>
+                    <li> Carry out ETL data wrangling processes using SQL SSIS for data warehousing to increase
+                        efficiencies in data analytics.
+                    </li>
+                    <li> Carryout business intelligence using Tableau Desktop, Tableau Bridge, and Tableau online
+                        platforms.
+                    </li>
+                    <li> Apply advanced analytics techniques to solve buisness problems: predictive modelling,
+                        linear/logistic regression, customer segmentation, decision trees, clustering etc.
+                    </li>
+                    <li> Developing analytical solutions to support customer churn/ retention, marketing campagian
+                        targeting, merchant/ customer acquisition
+                    </li>
+                </ul>
+
+                <h3>
+                    <a href="http://www.nationstrust.com/" target="_blank">Nations Trust Bank PLC</a>
+                </h3>
+
+
+                <h4>
+                    <strong>Manager Data Analytics(M2), 2014 to 2017</strong>
+                </h4>
+                <ul>
+                    <li>Evantaglist for data visualization in the bank: Spearheaded the establishment of the Tableau
+                        Center
+                        of Excellence
+                        for Consumer Banking. Received Exceptional grading** for the year 2016.
+                    </li>
+                    <li>Provided data-driven solutions: Initiated data driven cross sell initiatives for the SME and
+                        Consumer lending
+                        businesses; Used density-based clustering algorithms to identify potential branch locations;
+                        Built
+                        a
+                        simple recommendation engine to identify next best product using the Item-based collaborative
+                        filtering
+                        algorithm.
+                    </li>
+                    <li>Provided data-driven insights to business owners: Analyzed and processed complex data sets using
+                        advanced
+                        querying, visualization and analytics tools.
+                    </li>
+                </ul>
+
+
+                <h4>
+                    <strong>Portfolio Manager Consumer Lending and Retail Marketing(M1), 2012 to 2014 </strong>
+                </h4>
+                <ul>
+                    <li>Spearheaded the development and launch of the Nations Salary Saver savings product. Nominated as
+                        Employee
+                        of the Year under management category for the contribution made in achieving the bank’s low-cost
+                        funding
+                        targets.
+                    </li>
+                </ul>
+
+
+                <h5>Quantifiable Results:</h5>
+                <ul>
+                    <li>Rolled-out Tableau Desktop software to 15 users amounting to a total of ~$200k in licensing
+                        cost.
+                    </li>
+                    <li>Savings product contributes to ~30% of the low-cost book of the bank(~100k+ customers).</li>
+                    <li>Cross-sell efforts on lending business contributed to ~5% of the asset book of the bank.</li>
+                </ul>
+
+
+                <p style="font-size: 11px">** In general, Exceptional grades are awareded to less than 0.26%
+                    (considering
+                    the emperical rule of the normal
+                    bell curve) of the bank's employee base. In 2016, the Bank had a team of 2,770 employees.
+                </p>
 
             </div>
 
 
-            <div id="chart"></div>
-            <p style="font-size: 11px">** The bubbles represent the tools I use for a given category of skill. The size
-                of the bubble represents how
-                confident I am using the tool and the overall experience I have had with it--These are the tools that I
-                keep
-                under my pillow. The visualization was created using the
-                <strong>MAGNIFICENT</strong>
-                d3.js. The simulation implements a
-                <a href="https://github.com/d3/d3-force">velocity Verlet</a> numerical integrator for simulating
-                physical forces on particles;Verlet integration is
-                a numerical method used to integrate Newton's equations of motion (F=MA)
-            </p>
+            <div class="col-md-6">
 
-        </div>
+                <h2>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true" style="font-size: 15px"></span>
+                    Professional
+                    Development </h2>
 
-        <div class="col-md-6">
-            <h2>
-                <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 15px"></span>
-                Education </h2>
+                <p style="font-size: 11px"> A Link to each certification is attached.
+                </p>
 
-            <ul>
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>Program in Data Analytics and Visualization.</stong>
-                    <br>
-                    <span> University of Texas, Austin, USA</span>
-                    <br>
-                    <span> Oct 2017 ⤑ Apr 2018</span>
-                </li>
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>Program in Data Exploration and An Introduction to Statistical Learning.</stong>
-                    <br>
-                    <span> Dunder Data, Houston, USA</span>
-                    <br>
-                    <span> Aug 2017 ⤑ Sep 2017</span>
-                </li>
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>MBA in International Finance.</stong>
-                    <br>
-                    <span> Paris School of Business, Paris, France</span>
-                    <br>
-                    <span> 2010 ⤑ 2011</span>
-                </li>
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>BS in Physical Sciences.</stong>
-                    <br>
-                    <span> University of Colombo, Colombo, Sri Lanka</span>
-                    <br>
-                    <span> 2003 ⤑ 2006</span>
-                </li>
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>Advanced Diploma in Management Accountancy</stong>
-                    <br>
-                    <span> CIMA, UK</span>
-                    <br>
-                    <span> 2003 ⤑ 2006</span>
-                </li>
-            </ul>
-        </div>
+                <ul>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="../certifications/tableau.pdf" target="_blank">Tableau Desktop Qualified
+                                Associate</a>
+                        </stong>
+                        <br>
+                        <span>Tableau</span>
+                        <br>
+                        <span>March 13, 2018</span>
+                    </li>
 
-    </div>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="https://www.datacamp.com/statement-of-accomplishment/course/360dcee93b7580989835301208c23a48cb067c90"
+                                target="_blank">Statistical Thinking in Python (Part 1)</a>
+                        </stong>
+                        <br>
+                        <span>Justin Bois (Lecturer at the California Institute of Technology), Data Camp</span>
+                        <br>
+                        <span>December 31, 2017</span>
+                    </li>
 
-    <div class="row">
-        <div class="col-md-6">
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="https://www.datacamp.com/statement-of-accomplishment/course/f489fd50dee49679e04103091326f5be82af8b55"
+                                target="_blank">Introduction to Databases in Python Course</a>
+                        </stong>
+                        <br>
+                        <span>Jason Myers (Co-Author of Essential SQLAlchemy and Software Engineer), Data Camp</span>
+                        <br>
+                        <span>December 25, 2017</span>
+                    </li>
 
-            <h2>
-                <span class="glyphicon glyphicon-equalizer" aria-hidden="true" style="font-size: 15px"></span>
-                Experience
-            </h2>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="https://s3.amazonaws.com/verify.edx.org/downloads/393358adec3d4e3eb8bc10051800fbbb/Certificate.pdf"
+                                target="_blank">Text Mining & Analytics</a>
+                        </stong>
+                        <br>
+                        <span>Scott Cunningham (Delft University of Technology), Edx</span>
+                        <br>
+                        <span>Oct 21, 2015</span>
+                    </li>
 
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="../certifications/represearch.pdf" target="_blank">Reproducible Research</a>
+                        </stong>
+                        <br>
+                        <span>Roger D. Peng, PhD (Johns Hopkins University), Coursera</span>
+                        <br>
+                        <span>August 30, 2015</span>
+                    </li>
 
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="../certifications/explore.pdf" target="_blank">Exploratory Data Analysis</a>
+                        </stong>
+                        <br>
+                        <span>Roger D. Peng, PhD(Johns Hopkins University), Coursera</span>
+                        <br>
+                        <span>June 29, 2015</span>
+                    </li>
 
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="https://s3.amazonaws.com/verify.edx.org/downloads/c502ce65263d4281be0c55f290b3280a/Certificate.pdf"
+                                target="_blank">The Analytics Edge</a>
+                        </stong>
 
-            <h4>
-                <strong>Freelance Data Scientist, 2019 Jan - present</strong>
-            </h4>
-            <ul>
-                <li> Providing data analytical solutions to the following clients in United Kingdom:
+                        <stong></stong>
+                        <br>
+                        <span>Dimitris Bertsimas (MIT), Edx</span>
+                        <br>
+                        <span>May 25, 2015</span>
+                    </li>
 
-                </li>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="../certifications/r.pdf" target="_blank">R Programming</a>
+                        </stong>
+                        <br>
+                        <span>Roger D. Peng, PhD (Johns Hopkins University), Coursera</span>
+                        <br>
+                        <span>March 06, 2015</span>
+                    </li>
 
-                <div class="row">
-                    <div class="column">
-                        <a href="https://carehires.com/" target="_blank"><img src="images/resume/carehires.jpg" alt=""
-                                style="float:left; width: 100px;padding: 5px;"></a>
-                    </div>
-                    <div class="column">
-                        <a href="https://thegpservice.co.uk/" target="_blank"> <img src="images/resume/gpservices.jpg"
-                                alt="" style="float:left; width: 100px;padding: 5px;"></a>
-                    </div>
-                </div>
+                    <li style="line-height: 1.5;margin-bottom:10px">
+                        <stong>
+                            <a href="../certifications/toolbox.pdf" target="_blank">The Data Scientist’s Toolbox</a>
+                        </stong>
+                        <br>
+                        <span>Roger D. Peng, PhD (Johns Hopkins University), Coursera</span>
+                        <br>
+                        <span>Feb 13, 2015</span>
+                    </li>
 
-
-
-
-                <li> Run regular meetups to share data analytical knowledge through the meetup group <a
-                        href="https://www.meetup.com/Colombo-Data-Driven/" target="_blank">Colombo Data-Driven </a>
-                    which I formed during the
-                    beginning of the year.
-                </li>
-                <li> Engaged with the <a href="https://www.casrilanka.com/" target="_blank">Institute of Chartered
-                        Accountants of Sri Lanka (ICASL)</a> to run workshops on data analytics.
-                </li>
-
-            </ul>
-
-
-            <h3>
-                <a href="https://frimi.lk/" target="_blank">FriMi Digital Bank, Nations Trust Bank</a>
-            </h3>
-
-
-            <h4>
-                <strong>Senior Manager Data Analytics(6.2) - FriMi Digital Bank, 2018 May - 2018 Dec</strong>
-            </h4>
-            <ul>
-                <li> Provide regular insights to corporate management and the network based on MIS and analytics.
-                </li>
-                <li> Carry out ETL data wrangling processes using SQL SSIS for data warehousing to increase
-                    efficiencies in data analytics.
-                </li>
-                <li> Carryout business intelligence using Tableau Desktop, Tableau Bridge, and Tableau online
-                    platforms.
-                </li>
-                <li> Apply advanced analytics techniques to solve buisness problems: predictive modelling,
-                    linear/logistic regression, customer segmentation, decision trees, clustering etc.
-                </li>
-                <li> Developing analytical solutions to support customer churn/ retention, marketing campagian
-                    targeting, merchant/ customer acquisition
-                </li>
-            </ul>
-
-            <h3>
-                <a href="http://www.nationstrust.com/" target="_blank">Nations Trust Bank PLC</a>
-            </h3>
-
-
-            <h4>
-                <strong>Manager Data Analytics(M2), 2014 to 2017</strong>
-            </h4>
-            <ul>
-                <li>Evantaglist for data visualization in the bank: Spearheaded the establishment of the Tableau Center
-                    of Excellence
-                    for Consumer Banking. Received Exceptional grading** for the year 2016.
-                </li>
-                <li>Provided data-driven solutions: Initiated data driven cross sell initiatives for the SME and
-                    Consumer lending
-                    businesses; Used density-based clustering algorithms to identify potential branch locations; Built
-                    a
-                    simple recommendation engine to identify next best product using the Item-based collaborative
-                    filtering
-                    algorithm.
-                </li>
-                <li>Provided data-driven insights to business owners: Analyzed and processed complex data sets using
-                    advanced
-                    querying, visualization and analytics tools.
-                </li>
-            </ul>
-
-
-            <h4>
-                <strong>Portfolio Manager Consumer Lending and Retail Marketing(M1), 2012 to 2014 </strong>
-            </h4>
-            <ul>
-                <li>Spearheaded the development and launch of the Nations Salary Saver savings product. Nominated as
-                    Employee
-                    of the Year under management category for the contribution made in achieving the bank’s low-cost
-                    funding
-                    targets.
-                </li>
-            </ul>
-
-
-            <h5>Quantifiable Results:</h5>
-            <ul>
-                <li>Rolled-out Tableau Desktop software to 15 users amounting to a total of ~$200k in licensing cost.
-                </li>
-                <li>Savings product contributes to ~30% of the low-cost book of the bank(~100k+ customers).</li>
-                <li>Cross-sell efforts on lending business contributed to ~5% of the asset book of the bank.</li>
-            </ul>
-
-
-            <p style="font-size: 11px">** In general, Exceptional grades are awareded to less than 0.26% (considering
-                the emperical rule of the normal
-                bell curve) of the bank's employee base. In 2016, the Bank had a team of 2,770 employees.
-            </p>
+                </ul>
+            </div>
 
         </div>
 
 
-        <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>
+                    <span class="glyphicon glyphicon-heart-empty" aria-hidden="true" style="font-size: 15px"></span>
+                    Hobbies & Interests</h2>
 
-            <h2>
-                <span class="glyphicon glyphicon-star" aria-hidden="true" style="font-size: 15px"></span> Professional
-                Development </h2>
 
-            <p style="font-size: 11px"> A Link to each certification is attached.
-            </p>
 
-            <ul>
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="../certifications/tableau.pdf" target="_blank">Tableau Desktop Qualified Associate</a>
-                    </stong>
-                    <br>
-                    <span>Tableau</span>
-                    <br>
-                    <span>March 13, 2018</span>
-                </li>
+                <ul>
+                    <li>PADI Certified
+                        <a href="https://www.linkedin.com/posts/aseladassanayake_data-datascience-activity-6471003803121487872-rE8Y"
+                            target="_blank">Advanced Open
+                            Water Diver</a> – Diver No:
+                        1811AT4810
+                        <small> ; Bali-indonesia
+                        </small>
+                    </li>
 
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/360dcee93b7580989835301208c23a48cb067c90"
-                            target="_blank">Statistical Thinking in Python (Part 1)</a>
-                    </stong>
-                    <br>
-                    <span>Justin Bois (Lecturer at the California Institute of Technology), Data Camp</span>
-                    <br>
-                    <span>December 31, 2017</span>
-                </li>
+                    <li>PADI Certified
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:6274873683664302080"
+                            target="_blank">Open
+                            Water Diver and Enriched Air Diver</a> (Incl. Enriched Air Nitrox MAX 40% O2) – Diver No:
+                        1705EH9831
+                        <small> ; Bandos-Maldives
+                        </small>
+                    </li>
+                    <li>Quarter finalist at the Mercantile Tennis tournament held in Colombo, Sri lanka in 2013</li>
+                </ul>
+            </div>
 
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/f489fd50dee49679e04103091326f5be82af8b55"
-                            target="_blank">Introduction to Databases in Python Course</a>
-                    </stong>
-                    <br>
-                    <span>Jason Myers (Co-Author of Essential SQLAlchemy and Software Engineer), Data Camp</span>
-                    <br>
-                    <span>December 25, 2017</span>
-                </li>
+            <div class="col-md-6">
+                <h2>
+                    <span class="glyphicon glyphicon-lock" aria-hidden="true" style="font-size: 15px"></span> Projects
+                </h2>
 
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="https://s3.amazonaws.com/verify.edx.org/downloads/393358adec3d4e3eb8bc10051800fbbb/Certificate.pdf"
-                            target="_blank">Text Mining & Analytics</a>
-                    </stong>
-                    <br>
-                    <span>Scott Cunningham (Delft University of Technology), Edx</span>
-                    <br>
-                    <span>Oct 21, 2015</span>
-                </li>
+                <p>Data projects are listed at following link :
+                    <a href="projects.html">Data-Projects</a>
+                </p>
+                <p>Github that contains code to the projects is at the following link :
+                    <a href="https://github.com/asela1982">Github</a>
+                </p>
 
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="../certifications/represearch.pdf" target="_blank">Reproducible Research</a>
-                    </stong>
-                    <br>
-                    <span>Roger D. Peng, PhD (Johns Hopkins University), Coursera</span>
-                    <br>
-                    <span>August 30, 2015</span>
-                </li>
-
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="../certifications/explore.pdf" target="_blank">Exploratory Data Analysis</a>
-                    </stong>
-                    <br>
-                    <span>Roger D. Peng, PhD(Johns Hopkins University), Coursera</span>
-                    <br>
-                    <span>June 29, 2015</span>
-                </li>
-
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="https://s3.amazonaws.com/verify.edx.org/downloads/c502ce65263d4281be0c55f290b3280a/Certificate.pdf"
-                            target="_blank">The Analytics Edge</a>
-                    </stong>
-
-                    <stong></stong>
-                    <br>
-                    <span>Dimitris Bertsimas (MIT), Edx</span>
-                    <br>
-                    <span>May 25, 2015</span>
-                </li>
-
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="../certifications/r.pdf" target="_blank">R Programming</a>
-                    </stong>
-                    <br>
-                    <span>Roger D. Peng, PhD (Johns Hopkins University), Coursera</span>
-                    <br>
-                    <span>March 06, 2015</span>
-                </li>
-
-                <li style="line-height: 1.5;margin-bottom:10px">
-                    <stong>
-                        <a href="../certifications/toolbox.pdf" target="_blank">The Data Scientist’s Toolbox</a>
-                    </stong>
-                    <br>
-                    <span>Roger D. Peng, PhD (Johns Hopkins University), Coursera</span>
-                    <br>
-                    <span>Feb 13, 2015</span>
-                </li>
-
-            </ul>
+            </div>
         </div>
 
-    </div>
 
+        <div class="row">
+            <div class="col-md-6">
+                <h2>
+                    <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 15px"></span>Networking
+                </h2>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2>
-                <span class="glyphicon glyphicon-heart-empty" aria-hidden="true" style="font-size: 15px"></span>
-                Hobbies & Interests</h2>
-
-
-
-            <ul>
-                <li>PADI Certified
-                    <a href="https://www.linkedin.com/posts/aseladassanayake_data-datascience-activity-6471003803121487872-rE8Y"
-                        target="_blank">Advanced Open
-                        Water Diver</a> – Diver No:
-                    1811AT4810
-                    <small> ; Bali-indonesia
-                    </small>
-                </li>
-
-                <li>PADI Certified
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6274873683664302080"
-                        target="_blank">Open
-                        Water Diver and Enriched Air Diver</a> (Incl. Enriched Air Nitrox MAX 40% O2) – Diver No:
-                    1705EH9831
-                    <small> ; Bandos-Maldives
-                    </small>
-                </li>
-                <li>Quarter finalist at the Mercantile Tennis tournament held in Colombo, Sri lanka in 2013</li>
-            </ul>
-        </div>
-
-        <div class="col-md-6">
-            <h2>
-                <span class="glyphicon glyphicon-lock" aria-hidden="true" style="font-size: 15px"></span> Projects </h2>
-
-            <p>Data projects are listed at following link :
-                <a href="projects.html">Data-Projects</a>
-            </p>
-            <p>Github that contains code to the projects is at the following link :
-                <a href="https://github.com/asela1982">Github</a>
-            </p>
-
+                <ul>
+                    <li>
+                        <a href="https://austinstrategicplan.bloomfire.com/posts/1496098-2-winners-announced-at-civic-hackathon"
+                            target="_blank">Represented UT Austin at the Civic hackathon, Austin, 2017</a>
+                    </li>
+                    <li>
+                        <a href="https://scipy2017.scipy.org/ehome/index.php?eventid=220975&"
+                            target="_blank">Participated
+                            at the Scipy2017 Scientific Computing with Python, Austin, 2017</a>
+                    </li>
+                    <li>
+                        <a href="https://ontour.tableau.com/" target="_blank">Tableau Conference on Tour, Singapore,
+                            2016</a>
+                    </li>
+                    <li>
+                        <a href="https://www.psbedu.paris/en/news/paris-school-business-mba-students-participate-internationally-renowned-case-co"
+                            target="_blank">Represented Paris School of Business at the John Molson MBA International
+                            Case
+                            Competition, Montreal,
+                            2011 </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-
-    <div class="row">
-        <div class="col-md-6">
-            <h2>
-                <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 15px"></span>Networking</h2>
-
-            <ul>
-                <li>
-                    <a href="https://austinstrategicplan.bloomfire.com/posts/1496098-2-winners-announced-at-civic-hackathon"
-                        target="_blank">Represented UT Austin at the Civic hackathon, Austin, 2017</a>
-                </li>
-                <li>
-                    <a href="https://scipy2017.scipy.org/ehome/index.php?eventid=220975&" target="_blank">Participated
-                        at the Scipy2017 Scientific Computing with Python, Austin, 2017</a>
-                </li>
-                <li>
-                    <a href="https://ontour.tableau.com/" target="_blank">Tableau Conference on Tour, Singapore,
-                        2016</a>
-                </li>
-                <li>
-                    <a href="https://www.psbedu.paris/en/news/paris-school-business-mba-students-participate-internationally-renowned-case-co"
-                        target="_blank">Represented Paris School of Business at the John Molson MBA International Case
-                        Competition, Montreal,
-                        2011 </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
 
     <p style="font-size: 12px; margin-top:50px">Copyright © 2018 Asela Dassanayake</p>
 
