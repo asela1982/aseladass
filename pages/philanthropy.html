@@ -56,58 +56,66 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Asela Dassanayake</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-    <header>
-        <h1 id="logo">
-            <a href="../index.html">Asela Dassanayake</a>
-        </h1>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href='./resume.html'>Resume</a>
+                    </li>
 
-        <nav>
+                    <li>
+                        <a href="./training.html">Training</a>
+                    </li>
 
-            <ul>
+                    <li class="active"><a href="./philanthropy.html">Philanthropy<span
+                                class="sr-only">(current)</span></a>
+                    </li>
 
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-                <li>
-                    <a href='training.html'>Training</a>
-                </li>
-                <li>
-                    <a href="philanthropy.html">Philanthropy</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="library.html">Library</a>
-                </li>
-                <li>
-                    <a href='projects.html'>Data-Projects</a>
-                </li>
-                <li>
-                    <a href="acknowledgments.html">Acknowledgments</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
 
+                    <li>
+                        <a href="./library.html">Library</a>
+                    </li>
 
-                <li>
-                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-                    <script
-                        type='text/javascript'>kofiwidget2.init('Support Me', '#b8468a', 'O4O111N7W'); kofiwidget2.draw();</script>
+                    <li>
+                        <a href='./projects.html'>Data-Projects</a>
+                    </li>
 
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
+                    <li>
+                        <a href="./acknowledgments.html">Acknowledgments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div> <!-- /.container-fluid -->
+
+    </nav>
+
 
     <div class="container">
         <!-- projects -->
         <div class="row">
-            
+
             <div class="project-thumbnails">
                 <img src="images/philanthropy-projects/dryrations.png" data-name="philanthropy-dryrations-04072019"
                     style="width: 250px;" alt="" onClick="reply_click(this)"></a>
@@ -116,7 +124,7 @@
                 <img src="images/philanthropy-projects/madura.png" data-name="philanthropy-madura-08092019"
                     style="width: 250px;" alt="" onClick="reply_click(this)"></a>
             </div>
-        </div>  
+        </div>
 
         <!-- philanthropy-tubewell-14082019 -->
         <div class="row">
@@ -664,6 +672,10 @@
         </div>
 
     </div>
+
+
+    <p style="font-size: 12px; margin-top:50px">Copyright © 2019 Asela Dassanayake</p>
+
     <!-- javascript -->
     <script type="text/javascript">
 
@@ -682,8 +694,6 @@
             for (var i = 0; i < galleries.length; i++) {
                 galleries[i].setAttribute("style", "display: block;")
             }
-
-
         }
 
     </script>
