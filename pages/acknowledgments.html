@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acknowledgments</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115516655-1"></script>
@@ -12,10 +19,6 @@
 
         gtag('config', 'UA-115516655-1');
     </script>
-
-    <title>Acknowledgments</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
 
     <!-- lightbox gallery css and js -->
     <link href="../css/lightbox/lightbox.min.css" rel="stylesheet" />
@@ -44,9 +47,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
 
     <!-- Leaflet CSS & JS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
     <!-- vis.js -->
     <script src="../js/vis/vis.min.js"></script>
     <link href="../js/vis/vis.min.css" rel="stylesheet" type="text/css" />
@@ -103,8 +110,7 @@
                     </li>
 
                     <li class="active">
-                        <a href="./acknowledgments.html">Acknowledgments<span
-                                class="sr-only">(current)</span></a>
+                        <a href="./acknowledgments.html">Acknowledgments<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li><a href="./contact.html">Contact</a>
