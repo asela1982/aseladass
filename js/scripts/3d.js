@@ -25,8 +25,8 @@
 
       // specify options
       var options = {
-        width:  '500px',
-        height: '500px',
+        width:  '400px',
+        height: '400px',
         style: 'dot',
         tooltip: true,
         showPerspective: true,

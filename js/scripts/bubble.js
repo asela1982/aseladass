@@ -46,7 +46,7 @@ function change(value) {
 };
 
 
-var width = 500;
+var width = 400;
 var height = 375;
 
 var viz = [

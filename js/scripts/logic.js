@@ -1,12 +1,11 @@
-
 ////////////////////
 // d3 forcelayout///
 ///////////////////
 
 function forcelayout() {
 	//Width and height
-	var w = 750;
-	var h = 500;
+	var w = 300;
+	var h = 400;
 
 	//Original data
 	var dataset = {
