@@ -89,11 +89,27 @@ footer{
     display: none;
 }
 
+
+.data_projects{
+    display: none;
+}
+
 .gallery img{
     padding: 5px;
     transition: 1s;
 }
 
+
+.list_project{
+    list-style-type: none;
+}
+
+
+ul.list_project li{
+    float: left;
+    padding: 15px;
+
+}
 
 
 .project-thumbnails img:hover{
