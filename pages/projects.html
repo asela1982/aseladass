@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Data-Projects</title>
+    <title>Data Analysis with R</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115516655-1"></script>
@@ -104,7 +104,8 @@
                         <a href="./library.html">Library</a>
                     </li>
 
-                    <li class="active"><a href="./projects.html">Data-Projects<span class="sr-only">(current)</span></a>
+                    <li class="active"><a href="./projects.html">Data Analysis with R<span
+                                class="sr-only">(current)</span></a>
                     </li>
 
                     <li>
@@ -125,134 +126,16 @@
         <div class="row">
             <!-- projects -->
             <div class="project-thumbnails">
-                <img src="images/data-projects/data-viz.png" data-name="data_projects_viz" style="width: 250px;" alt=""
-                    onClick="reply_click(this)"></a>
-                <img src="images/data-projects/web-apps.png" data-name="data_projects_webapps" style="width: 250px;"
-                    alt="" onClick="reply_click(this)"></a>
-                <img src="images/data-projects/ml.png" data-name="data_projects_ml" style="width: 250px;" alt=""
-                    onClick="reply_click(this)"></a>
-                <img src="images/data-projects/web-scrap.png" data-name="data_projects_webscrape" style="width: 250px;"
-                    alt="" onClick="reply_click(this)"></a>
+
+                <a href="r-pages/descriptive-stats.html"><img src="images/r-pages/descriptivestat.png" 
+                     style="width: 200px;" alt=""> </a>
             </div>
+
         </div>
     </div>
 
-
-    <!-- data_projects-viz -->
-    <div class="row">
-        <div class="data_projects data_projects_viz">
-            <ul class="list_project">
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Data Journalism and D3</h5>
-                    <a href="https://github.com/asela1982/Data-Journalism-and-D3.git" target="_blank">
-                        <img src="./images/data-projects/projects/datajournalism.png" alt="" style="width: 250px;">
-                    </a>
-                </li>
-
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Belly Button Biodiversity Interactive Dashboard</h5>
-                    <a href="https://github.com/asela1982/Belly-Button-Biodiversity-Interactive-Dashboard"
-                        target="_blank">
-                        <img src="./images/data-projects/projects/bellybutton.png" alt="" style="width: 250px;">
-                        <br></a>
-                </li>
-
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Distribution of Grave crimes in Sri Lanka</h5>
-                    <a href="https://public.tableau.com/profile/asela.dassanayake#!/vizhome/DistributionofGravecrimesinSriLanka-2015/DistributionofgravecrimesinSriLanka-2015"
-                        target="_blank">
-                        <img src="./images/data-projects/projects/crimes.png" alt="" style="width: 250px;">
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <!-- data_projects-webscrape -->
-    <div class="row">
-        <div class="data_projects data_projects_webscrape">
-            <ul class="list_project">
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Mission to Mars</h5>
-                    <a href="https://github.com/asela1982/utdatanalytics-wk13-Web-Scrapping-and-Mongo" target="_blank">
-                        <img src="./images/data-projects/projects/missiontomars.png" alt="" style="width: 250px;">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- data_projects-webapps -->
-    <div class="row">
-        <div class="data_projects data_projects_webapps">
-            <ul class="list_project">
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Fitness Buddy</h5>
-                    <a href="https://github.com/asela1982/webapps_fitnessbuddy" target="_blank">
-                        <img src="./images/data-projects/projects/fitnessbuddy.png" alt="" style="width: 250px;">
-                        </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <!-- data_projects-ml -->
-    <div class="row">
-        <div class="data_projects data_projects_ml">
-            <ul class="list_project">
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Why are our employees leaving prematurely?</h5>
-                    <a href="https://www.kaggle.com/aselad/why-are-our-employees-leaving-prematurely" target="_blank">
-                        <img src="./images/data-projects/projects/employees.png" alt="" style="width: 250px;">
-                        </a>
-                </li>
-
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>What makes online news articles popular?</h5>
-                    <a href="https://www.kaggle.com/c/15-071x-the-analytics-edge-competition-spring-2015"
-                        target="_blank">
-                        <img src="./images/data-projects/projects/articles.png" alt="" style="width: 250px;">
-                        </a>
-                </li>
-
-                <li style="text-align:center;margin-top:30px;">
-                    <h5>Predict the price of a home in Ames, Iowa?</h5>
-                    <a href="https://www.kaggle.com/c/home-data-for-ml-course/overview" target="_blank">
-                        <img src="./images/data-projects/projects/housing.jpg" alt="" style="width: 250px;">
-                        </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-
-
-
-    <p style="font-size: 12px; margin-top:50px">Copyright © 2019 Asela Dassanayake</p>
-
-    <!-- javascript -->
-    <script type="text/javascript">
-
-        function reply_click(clicked_object) {
-
-            var data_projects = document.getElementsByClassName("data_projects");
-
-            for (var i = 0; i < data_projects.length; i++) {
-                data_projects[i].setAttribute("style", "display: none;")
-            }
-            var element = clicked_object.getAttribute('data-name')
-
-            var data_projects = document.getElementsByClassName(element);
-
-            for (var i = 0; i < data_projects.length; i++) {
-                data_projects[i].setAttribute("style", "display: block;")
-            }
-        }
-
-    </script>
+    <p style="font-size: 12px; margin-top:50px">Copyright © 2019 Asela
+        Dassanayake</p>
 </body>
 
 </html>
