@@ -9,8 +9,24 @@ body{
     font-size: 20px;
 }
 
+.main h1{
+    font-size: 5rem;
+}
 
+.main p{
+    font-size: 2.5rem;
+   
+}
 
+.main a{
+    color: blue;
+    text-decoration: underline;
+}
+
+span {
+    content: "\2764";
+    color: crimson;
+}
 
 a  {
     color: #222222;
